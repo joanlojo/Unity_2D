@@ -5,14 +5,16 @@ using UnityEngine;
 public class movimientoCamara : MonoBehaviour {
 
     public GameObject player;
-    private Vector3 offset;
-	// Use this for initialization
+    private Vector3 tempVec3 = new Vector3();
+    // Use this for initialization
+    float offsetX;
 	void Start () {
-        offset = transform.position - player.transform.position;
-	}
+        offsetX = transform.position.x - player.transform.position.x;
+    }
 	
 	// Update is called once per frame
 	void LateUpdate () {
-        transform.position = player.transform.position + offset;
-	}
+        transform.position = new Vector3(player.transform.position.x + offsetX, 0.65f, -12f);
+        
+    }
 }
