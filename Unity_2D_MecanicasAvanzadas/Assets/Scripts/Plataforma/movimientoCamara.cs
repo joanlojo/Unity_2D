@@ -14,7 +14,8 @@ public class movimientoCamara : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
-        transform.position = new Vector3(player.transform.position.x + offsetX, 0.65f, -12f);
+       // GameObject.Find("ThePlayer").GetComponent<PlayerScript>().Health
+        transform.Translate(Time.deltaTime * 7.5f, 0, 0);
         
     }
 }

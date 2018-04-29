@@ -11,7 +11,7 @@ public class movimientoPelota : MonoBehaviour {
     public float speed = 5f;
     bool doublejump;
     //float distGround;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     int jumps;
     public int maxjumps = 2;
     private bool isGrounded;
@@ -34,6 +34,14 @@ public class movimientoPelota : MonoBehaviour {
         if (Mathf.Abs(rb.velocity.x) > speed)
         {
             rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * speed, rb.velocity.y);
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            speed += 3;
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            speed -= 3;
         }
         if (Input.GetKeyDown(KeyCode.Space) )
         {
