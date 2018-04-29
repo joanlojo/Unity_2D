@@ -72,12 +72,18 @@ public class movimientoPelota : MonoBehaviour {
            // movespeed = 2.0F;
 
         }
+       
     }
-   /*         void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Suelo"))
+        if (collision.tag == "Tierra")
         {
-            isGrounded = true;
+            speed -= 7;
         }
-    }*/
+        if (collision.tag == "Agua")
+        {
+            speed += 7;
+        }
+    }
+
 }

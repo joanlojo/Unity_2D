@@ -95,6 +95,7 @@
     <Compile Include="Assets\Scripts\Chute\getVariable.cs" />
     <Compile Include="Assets\Scripts\Chute\iksolver.cs" />
     <Compile Include="Assets\Scripts\Chute\setBallPointVector.cs" />
+    <Compile Include="Assets\Scripts\Plataforma\Terrenos.cs" />
     <Compile Include="Assets\Scripts\Plataforma\colisionCamara.cs" />
     <Compile Include="Assets\Scripts\Plataforma\movimientoCamara.cs" />
     <Compile Include="Assets\Scripts\Plataforma\movimientoPelota.cs" />

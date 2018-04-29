@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-public class colisionCamara : MonoBehaviour {
 
-    public GameObject player;
+public class Terrenos : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
 		
@@ -14,11 +13,12 @@ public class colisionCamara : MonoBehaviour {
 	void Update () {
 		
 	}
+
     void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Tierra")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Debug.Log("Hola");
         }
     }
 }

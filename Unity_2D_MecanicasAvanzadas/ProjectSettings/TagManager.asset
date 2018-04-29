@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Suelo
+  - Tierra
+  - Agua
   layers:
   - Default
   - TransparentFX
