@@ -8,7 +8,7 @@ public class movimientoPelota : MonoBehaviour {
 
     public float Force = 365f;
     public float salto = 1000f;
-    public float speed = 5f;
+    private float speed = 7.5f;
     bool doublejump;
     //float distGround;
     public Rigidbody2D rb;
@@ -27,26 +27,28 @@ public class movimientoPelota : MonoBehaviour {
     {
         Vector2 movement = new Vector2(1.0f, 0.0f);
 
-        if (movement.x * rb.velocity.x < speed)
-        {
-            rb.AddForce(Vector2.right * movement.x * Force);
-        }
-        if (Mathf.Abs(rb.velocity.x) > speed)
-        {
-            rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * speed, rb.velocity.y);
-        }
+
+        rb.velocity = new Vector2(movement.x * speed, rb.velocity.y);
+        
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            speed += 3;
+            speed = speed +2;
         }
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            speed -= 3;
+            speed = speed - 2;
         }
         if (Input.GetKeyDown(KeyCode.Space) )
         {
             Jump();
-
+        }
+        if(speed > 12)
+        {
+            speed = 12;
+        }
+        if(speed < 4)
+        {
+            speed = 4;
         }
     }
 
@@ -69,8 +71,6 @@ public class movimientoPelota : MonoBehaviour {
         {
             jumps = maxjumps;
             isGrounded = true;
-           // movespeed = 2.0F;
-
         }
        
     }
@@ -78,11 +78,11 @@ public class movimientoPelota : MonoBehaviour {
     {
         if (collision.tag == "Tierra")
         {
-            speed -= 7;
+            speed = speed - 2;
         }
         if (collision.tag == "Agua")
         {
-            speed += 7;
+            speed = speed + 2;
         }
     }
 

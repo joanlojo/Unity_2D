@@ -24,35 +24,7 @@ public class RestartLevel : MonoBehaviour {
             {
                 SceneManager.LoadScene("Main");
             }
-        }
-
-      /*  if (levelName == "Main")
-        {
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
-                SceneManager.LoadScene(levelName);
-            }
-        }*/
-
-        if(pelota.transform.position.y < -2.1)
-        {
-            gravity.y = 0;
-            Welocity.module = 0;
-            Welocity.x = 0;
-            Welocity.y = 0;
-            Welocity.z = 0;
-            tau.x = 0;
-            tau.y = 0;
-            tau.z = 0;
-            velocityP.x = 0;
-            velocityP.y = 0;
-            velocityP.z = 0;
-            //SceneManager.LoadScene("Start");
-        }
-
-
-        //LineRenderer lr = myLine.GetComponent<LineRenderer>();
-        
+        }    
 
     }
 }
