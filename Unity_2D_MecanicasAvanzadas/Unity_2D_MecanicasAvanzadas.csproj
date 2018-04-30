@@ -96,7 +96,10 @@
     <Compile Include="Assets\Scripts\Chute\iksolver.cs" />
     <Compile Include="Assets\Scripts\Chute\setBallPointVector.cs" />
     <Compile Include="Assets\Scripts\DeteccionGol.cs" />
+    <Compile Include="Assets\Scripts\Plataforma\BarraProgres.cs" />
+    <Compile Include="Assets\Scripts\Plataforma\Botones.cs" />
     <Compile Include="Assets\Scripts\Plataforma\ChangeScene.cs" />
+    <Compile Include="Assets\Scripts\Plataforma\PausaMenu.cs" />
     <Compile Include="Assets\Scripts\Plataforma\Terrenos.cs" />
     <Compile Include="Assets\Scripts\Plataforma\colisionCamara.cs" />
     <Compile Include="Assets\Scripts\Plataforma\movimientoCamara.cs" />
