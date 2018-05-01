@@ -7,12 +7,15 @@ public class BarraProgres : MonoBehaviour {
     public float barDisplay; //current progress
     public Vector2 pos = new Vector2(20, 40);
     public Vector2 size = new Vector2(60, 20);
+    public GameObject end;
     public Texture2D emptyTex;
     public Texture2D fullTex;
     public GameObject Player;
+    float posX;
 
     private void Start()
     {
+        posX = Player.transform.position.x;
         //Player = GetComponent<GameObject>();
     }
 
@@ -34,7 +37,7 @@ public class BarraProgres : MonoBehaviour {
         //for this example, the bar display is linked to the current time,
         //however you would set this value based on your desired display
         //eg, the loading progress, the player's health, or whatever.
-        barDisplay = 100 - Player.transform.position.x;
+        barDisplay = ((posX + end.transform.position.x) - Player.transform.position.x) / end.transform.position.x;
         Debug.Log(Player.transform.position.x);
         //        barDisplay = MyControlScript.staticHealth;
     }
