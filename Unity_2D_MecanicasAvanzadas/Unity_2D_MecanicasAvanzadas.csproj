@@ -99,7 +99,9 @@
     <Compile Include="Assets\Scripts\Plataforma\BarraProgres.cs" />
     <Compile Include="Assets\Scripts\Plataforma\Botones.cs" />
     <Compile Include="Assets\Scripts\Plataforma\ChangeScene.cs" />
+    <Compile Include="Assets\Scripts\Plataforma\GoBackMenu.cs" />
     <Compile Include="Assets\Scripts\Plataforma\PausaMenu.cs" />
+    <Compile Include="Assets\Scripts\Plataforma\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Plataforma\Terrenos.cs" />
     <Compile Include="Assets\Scripts\Plataforma\colisionCamara.cs" />
     <Compile Include="Assets\Scripts\Plataforma\movimientoCamara.cs" />

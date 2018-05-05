@@ -6,9 +6,10 @@ public class PausaMenu : MonoBehaviour {
 
     public static bool gamePaused = false;
     public GameObject pauseUI;
-	// Use this for initialization
-	void Start () {
-		
+     AudioSource cancion;
+    // Use this for initialization
+    void Start () {
+        cancion = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -22,6 +23,7 @@ public class PausaMenu : MonoBehaviour {
             else
             {
                 Pause();
+                
             }
         }
 
@@ -31,6 +33,7 @@ public class PausaMenu : MonoBehaviour {
         pauseUI.SetActive(false);
         Time.timeScale = 1f;
         gamePaused = false;
+        //cancion.Play();
 
     }
     void Pause()
@@ -38,5 +41,6 @@ public class PausaMenu : MonoBehaviour {
         pauseUI.SetActive(true);
         Time.timeScale = 0f;
         gamePaused = true;
+        //cancion.Stop();
     }
 }

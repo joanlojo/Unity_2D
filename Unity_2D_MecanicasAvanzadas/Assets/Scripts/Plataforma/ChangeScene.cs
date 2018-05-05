@@ -7,7 +7,7 @@ public class ChangeScene : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 	
 	// Update is called once per frame
@@ -18,6 +18,7 @@ public class ChangeScene : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Player")
         {
+            SoundManager.PlaySound("pito");
             SceneManager.LoadScene("Main");
         }
     }

@@ -57,6 +57,7 @@ public class movimientoPelota : MonoBehaviour {
         if (jumps > 0)
         {
             rb.velocity = new Vector2(0f, salto);
+            SoundManager.PlaySound("bote");
             isGrounded = false;
             jumps = jumps - 1;
         }

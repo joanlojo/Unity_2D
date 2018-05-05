@@ -65,8 +65,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1427950803785864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.53, y: -1.48, z: -5.88}
-  m_LocalScale: {x: 0.23823857, y: 0.23823866, z: 0.23823866}
+  m_LocalPosition: {x: -3.1140938, y: -0.9221283, z: -2.14}
+  m_LocalScale: {x: 0.22537462, y: 0.22537473, z: 0.22537473}
   m_Children:
   - {fileID: 4535192833626492}
   m_Father: {fileID: 0}
@@ -83,7 +83,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 1.1144341
+  m_Mass: 0.9973333
   m_LinearDrag: 0.5
   m_AngularDrag: 0
   m_GravityScale: 6
@@ -91,7 +91,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!58 &58367291713599022
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -121,7 +121,6 @@ MonoBehaviour:
   jump: 0
   Force: 365
   salto: 25
-  speed: 7.5
   rb: {fileID: 50112140858638892}
   maxjumps: 2
 --- !u!212 &212561061297342920

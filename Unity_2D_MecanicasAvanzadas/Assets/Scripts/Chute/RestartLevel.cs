@@ -24,7 +24,11 @@ public class RestartLevel : MonoBehaviour {
             {
                 SceneManager.LoadScene("Main");
             }
-        }    
+        }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
 
     }
 }
