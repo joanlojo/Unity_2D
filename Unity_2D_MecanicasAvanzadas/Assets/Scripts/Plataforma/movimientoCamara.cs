@@ -5,6 +5,7 @@ using UnityEngine;
 public class movimientoCamara : MonoBehaviour {
 
     public GameObject player;
+    public float vel;
     private Vector3 tempVec3 = new Vector3();
     // Use this for initialization
     float offsetX;
@@ -15,7 +16,7 @@ public class movimientoCamara : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate () {
        // GameObject.Find("ThePlayer").GetComponent<PlayerScript>().Health
-        transform.Translate(Time.deltaTime * 7.5f, 0, 0);
+        transform.Translate(Time.deltaTime * vel, 0, 0);
         
     }
 }

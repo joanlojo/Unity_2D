@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class movimientoPelota : MonoBehaviour {
 
@@ -9,8 +10,11 @@ public class movimientoPelota : MonoBehaviour {
     public float Force = 365f;
     public float salto = 1000f;
     private float speed = 7.5f;
+    private float maxSpeed;
+    private float minSpeed;
     bool doublejump;
-    //float distGround;
+    Scene currScene;
+    string nameScene;
     public Rigidbody2D rb;
     int jumps;
     public int maxjumps = 2;
@@ -22,11 +26,23 @@ public class movimientoPelota : MonoBehaviour {
         isGrounded = true;
         //distGround = Vector2.Distance(transform.position, collider2D.transform.position);
         rb = GetComponent<Rigidbody2D>();
+        currScene = SceneManager.GetActiveScene();
+        nameScene = currScene.name;
     }
     void Update()
     {
-        Vector2 movement = new Vector2(1.0f, 0.0f);
+        if (nameScene == "lvl_tutorial")
+        {
+            maxSpeed = 12;
+            minSpeed = 6;
+        }
+        if (nameScene == "lvl_2")
+        {
+            maxSpeed = 16;
+            minSpeed = 2;
+        }
 
+        Vector2 movement = new Vector2(1.0f, 0.0f);
 
         rb.velocity = new Vector2(movement.x * speed, rb.velocity.y);
         
@@ -42,13 +58,14 @@ public class movimientoPelota : MonoBehaviour {
         {
             Jump();
         }
-        if(speed > 12)
+
+        if(speed > maxSpeed)
         {
-            speed = 12;
+            speed = maxSpeed;
         }
-        if(speed < 4)
+        if(speed < minSpeed)
         {
-            speed = 4;
+            speed = minSpeed;
         }
     }
 

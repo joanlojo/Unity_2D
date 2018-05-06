@@ -5,6 +5,7 @@ using UnityEngine;
 public class SaltoPiernas : MonoBehaviour {
 
     float time;
+    public float maxTime;
     public Rigidbody2D rb;
     public int salto;
     // Use this for initialization
@@ -16,7 +17,7 @@ public class SaltoPiernas : MonoBehaviour {
 	void Update () {
         time += Time.deltaTime;
 
-        if (time >= 1.5f)
+        if (time >= maxTime)
         {
             rb.velocity = new Vector2(0f, salto);
             time = 0;

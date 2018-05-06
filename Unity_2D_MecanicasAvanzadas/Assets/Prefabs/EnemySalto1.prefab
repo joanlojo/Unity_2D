@@ -23,9 +23,9 @@ GameObject:
   - component: {fileID: 61771210061529598}
   - component: {fileID: 114169471707503334}
   - component: {fileID: 50216080918065404}
-  - component: {fileID: 114699416844363626}
+  - component: {fileID: 114325747668932252}
   m_Layer: 0
-  m_Name: EnemyMOv
+  m_Name: EnemySalto1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1240548810752502}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 78.85278, y: -1.2036457, z: 1.5100002}
+  m_LocalPosition: {x: 89.46, y: -1.2036457, z: 3.57}
   m_LocalScale: {x: 0.533965, y: 0.53396523, z: 0.53396523}
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.34817785, y: 0}
+  m_Offset: {x: 0.008728564, y: -0.057566643}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -87,7 +87,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9743878, y: 5.12}
+  m_Size: {x: 1.6750335, y: 5.0048666}
   m_EdgeRadius: 0
 --- !u!114 &114169471707503334
 MonoBehaviour:
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
---- !u!114 &114699416844363626
+--- !u!114 &114325747668932252
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -109,11 +109,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1240548810752502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccae1b3540511104ca3b81be0e2490f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a235866e10628a4399b9a0f974b21d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxTime: 1.3
   rb: {fileID: 50216080918065404}
-  vel: 10
+  salto: 20
 --- !u!212 &212343281561248770
 SpriteRenderer:
   m_ObjectHideFlags: 1
