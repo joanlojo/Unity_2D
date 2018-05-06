@@ -38,7 +38,7 @@ public class BarraProgres : MonoBehaviour {
         //however you would set this value based on your desired display
         //eg, the loading progress, the player's health, or whatever.
         barDisplay = ((posX + end.transform.position.x) - Player.transform.position.x) / end.transform.position.x;
-        Debug.Log(Player.transform.position.x);
+        //Debug.Log(Player.transform.position.x);
         //        barDisplay = MyControlScript.staticHealth;
     }
 }
