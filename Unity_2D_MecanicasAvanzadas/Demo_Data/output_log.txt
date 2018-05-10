@@ -1,0 +1,64 @@
+Initialize engine version: 5.6.3p1 (9c92e827232b)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 960M (ID=0x139b)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   23.21.13.8859
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\sobre\Desktop\2Semestre\Mecanicas avanzadas\Unity_2D_MecanicasAvanzadas\Unity_2D_MecanicasAvanzadas\Demo_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\sobre\Desktop\2Semestre\Mecanicas avanzadas\Unity_2D_MecanicasAvanzadas\Unity_2D_MecanicasAvanzadas\Demo_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\sobre\Desktop\2Semestre\Mecanicas avanzadas\Unity_2D_MecanicasAvanzadas\Unity_2D_MecanicasAvanzadas\Demo_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\sobre\Desktop\2Semestre\Mecanicas avanzadas\Unity_2D_MecanicasAvanzadas\Unity_2D_MecanicasAvanzadas\Demo_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\sobre\Desktop\2Semestre\Mecanicas avanzadas\Unity_2D_MecanicasAvanzadas\Unity_2D_MecanicasAvanzadas\Demo_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\sobre\Desktop\2Semestre\Mecanicas avanzadas\Unity_2D_MecanicasAvanzadas\Unity_2D_MecanicasAvanzadas\Demo_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\sobre\Desktop\2Semestre\Mecanicas avanzadas\Unity_2D_MecanicasAvanzadas\Unity_2D_MecanicasAvanzadas\Demo_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\sobre\Desktop\2Semestre\Mecanicas avanzadas\Unity_2D_MecanicasAvanzadas\Unity_2D_MecanicasAvanzadas\Demo_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.026 seconds
+Platform assembly: C:\Users\sobre\Desktop\2Semestre\Mecanicas avanzadas\Unity_2D_MecanicasAvanzadas\Unity_2D_MecanicasAvanzadas\Demo_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\sobre\Desktop\2Semestre\Mecanicas avanzadas\Unity_2D_MecanicasAvanzadas\Unity_2D_MecanicasAvanzadas\Demo_Data\Managed\System.dll (this message is harmless)
+desktop: 2560x1440 60Hz; virtual: 2560x1440 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.173333 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2834 -> priority: 1 
+  Thread -> id: 1cc4 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.093777 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 285.
+Total: 5.218222 ms (FindLiveObjects: 0.020000 ms CreateObjectMapping: 0.014222 ms MarkObjects: 0.201333 ms  DeleteObjects: 4.982222 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PausaMenu.Pause () [0x00000] in <filename unknown>:0 
+  at PausaMenu.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.305333 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 318.
+Total: 0.510666 ms (FindLiveObjects: 0.034666 ms CreateObjectMapping: 0.018666 ms MarkObjects: 0.408444 ms  DeleteObjects: 0.047111 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.444444 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 701.
+Total: 5.722222 ms (FindLiveObjects: 0.084444 ms CreateObjectMapping: 0.015555 ms MarkObjects: 0.174222 ms  DeleteObjects: 5.447555 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.499111 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 731.
+Total: 0.899111 ms (FindLiveObjects: 0.134222 ms CreateObjectMapping: 0.044888 ms MarkObjects: 0.704888 ms  DeleteObjects: 0.012444 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.542222 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 731.
+Total: 0.760444 ms (FindLiveObjects: 0.144000 ms CreateObjectMapping: 0.042666 ms MarkObjects: 0.566222 ms  DeleteObjects: 0.005333 ms)
+

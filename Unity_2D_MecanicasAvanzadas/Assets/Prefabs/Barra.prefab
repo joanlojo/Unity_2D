@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barDisplay: 0
-  pos: {x: 1050, y: 40}
+  pos: {x: 850, y: 40}
   size: {x: 300, y: 50}
   end: {fileID: 0}
   emptyTex: {fileID: 2800000, guid: b7ce5736b2c0d0647bc2df4daa904a16, type: 3}

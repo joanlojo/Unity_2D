@@ -10,6 +10,7 @@ public class movimientoPelota : MonoBehaviour {
     public float Force = 365f;
     public float salto = 1000f;
     private float speed = 7.5f;
+    public GameObject enemys;
     private float maxSpeed;
     private float minSpeed;
     bool doublejump;
@@ -59,7 +60,16 @@ public class movimientoPelota : MonoBehaviour {
             Jump();
         }
 
-        if(speed > maxSpeed)
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            enemys.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            enemys.SetActive(true);
+        }
+
+        if (speed > maxSpeed)
         {
             speed = maxSpeed;
         }
