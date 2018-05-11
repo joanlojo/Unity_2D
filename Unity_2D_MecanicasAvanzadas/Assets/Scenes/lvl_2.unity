@@ -1541,11 +1541,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4676186409624822, guid: c898996062e23044bbca3ac0510ae5d8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.05
+      value: 1.52
       objectReference: {fileID: 0}
     - target: {fileID: 4676186409624822, guid: c898996062e23044bbca3ac0510ae5d8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.67
+      value: 1.61
       objectReference: {fileID: 0}
     - target: {fileID: 4676186409624822, guid: c898996062e23044bbca3ac0510ae5d8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1587,6 +1587,20 @@ Prefab:
       value: 
       objectReference: {fileID: 421018883}
     - target: {fileID: 114759825577576866, guid: c898996062e23044bbca3ac0510ae5d8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924928015064536, guid: c898996062e23044bbca3ac0510ae5d8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114995141935086048, guid: c898996062e23044bbca3ac0510ae5d8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 421018883}
+    - target: {fileID: 114995141935086048, guid: c898996062e23044bbca3ac0510ae5d8,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Restart
@@ -2417,7 +2431,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4836881371413962, guid: 73afeee4006299241923ba221ba3629b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 490.85
+      value: 432
       objectReference: {fileID: 0}
     - target: {fileID: 4836881371413962, guid: 73afeee4006299241923ba221ba3629b, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3502,7 +3516,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1519666708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 428.4, y: -0.32, z: -160.29385}
+  m_LocalPosition: {x: 432.7, y: -0.32, z: -9.6}
   m_LocalScale: {x: 1, y: 7.156791, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4651,6 +4665,10 @@ Prefab:
     - target: {fileID: 4564651166830518, guid: 22456d61e0406fb448443e0a85ef8b23, type: 2}
       propertyPath: m_RootOrder
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486264738886686, guid: 22456d61e0406fb448443e0a85ef8b23, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22456d61e0406fb448443e0a85ef8b23, type: 2}

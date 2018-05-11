@@ -417,11 +417,12 @@ MonoBehaviour:
 
     4. Press SPACE.
 
-    5. Press A to restart.
 
+    * Press A to restart.
 
     * Change camera pressing C.
 
+    * Press B to go to the Main Menu.
 
 '
 --- !u!114 &114810449586833518

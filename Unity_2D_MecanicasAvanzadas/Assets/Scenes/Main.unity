@@ -5504,11 +5504,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4525307740434944, guid: 3cab7557a840b3e48b6cefaa42179332, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.345
+      value: -5.478
       objectReference: {fileID: 0}
     - target: {fileID: 4525307740434944, guid: 3cab7557a840b3e48b6cefaa42179332, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.119
+      value: -1.101
       objectReference: {fileID: 0}
     - target: {fileID: 4525307740434944, guid: 3cab7557a840b3e48b6cefaa42179332, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5533,21 +5533,6 @@ Prefab:
     - target: {fileID: 4525307740434944, guid: 3cab7557a840b3e48b6cefaa42179332, type: 2}
       propertyPath: m_RootOrder
       value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 65555755160047224, guid: 3cab7557a840b3e48b6cefaa42179332,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 54336992341926788, guid: 3cab7557a840b3e48b6cefaa42179332,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 54336992341926788, guid: 3cab7557a840b3e48b6cefaa42179332,
-        type: 2}
-      propertyPath: m_UseGravity
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3cab7557a840b3e48b6cefaa42179332, type: 2}
